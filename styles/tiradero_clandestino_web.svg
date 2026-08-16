@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512" viewBox="0 0 512 512">
+
+  <!-- PIN NARANJA -->
+  <path d="M256 18
+           C150 18 72 96 72 198
+           C72 318 196 432 256 490
+           C316 432 440 318 440 198
+           C440 96 362 18 256 18Z"
+        fill="#F26B21"
+        stroke="#2F343B"
+        stroke-width="12"
+        stroke-linejoin="round"/>
+
+  <!-- CÍRCULO BLANCO -->
+  <circle cx="256" cy="196" r="132"
+          fill="#FFFFFF"
+          stroke="#2F343B"
+          stroke-width="8"/>
+
+  <!-- SOMBRA/BASE DE RESIDUOS -->
+  <ellipse cx="258" cy="298" rx="115" ry="31"
+           fill="#D9D9D9"
+           stroke="#2F343B"
+           stroke-width="5"/>
+
+  <!-- BOLSA -->
+  <path d="M190 152
+           C201 143 214 140 226 144
+           L244 138
+           L260 147
+           L278 139
+           C293 144 305 158 302 173
+           C331 196 338 232 326 263
+           C315 292 286 309 254 309
+           C222 309 191 292 180 263
+           C168 231 176 195 205 172
+           C198 164 192 157 190 152Z"
+        fill="#3E434C"
+        stroke="#24282E"
+        stroke-width="6"
+        stroke-linejoin="round"/>
+
+  <!-- AMARRE BOLSA -->
+  <path d="M211 151 L228 125 L244 148
+           M262 148 L280 125 L296 151"
+        fill="none"
+        stroke="#F2F2F2"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- LLANTA -->
+  <ellipse cx="333" cy="242" rx="59" ry="47"
+           fill="#515762"
+           stroke="#24282E"
+           stroke-width="7"/>
+  <ellipse cx="333" cy="242" rx="31" ry="24"
+           fill="#FFFFFF"
+           stroke="#24282E"
+           stroke-width="6"/>
+
+  <!-- TACOS DE LLANTA -->
+  <path d="M290 215 L301 224
+           M301 201 L313 214
+           M320 195 L327 211
+           M341 195 L343 211
+           M360 202 L355 218
+           M375 216 L363 228
+           M381 238 L365 243
+           M376 259 L361 254
+           M362 276 L350 264
+           M341 287 L337 270
+           M319 283 L325 267
+           M299 270 L310 259"
+        fill="none"
+        stroke="#C6CBD1"
+        stroke-width="5"
+        stroke-linecap="round"/>
+
+  <!-- BOTELLA -->
+  <g transform="rotate(18 174 287)">
+    <rect x="142" y="272" width="66" height="26" rx="12"
+          fill="#E7F1F7"
+          stroke="#2F343B"
+          stroke-width="5"/>
+    <rect x="134" y="277" width="12" height="16" rx="3"
+          fill="#3F82D7"
+          stroke="#2F343B"
+          stroke-width="3"/>
+  </g>
+
+  <!-- CAJA -->
+  <path d="M254 276 L286 263 L312 281 L301 310 L266 311Z"
+        fill="#D98A3A"
+        stroke="#2F343B"
+        stroke-width="5"
+        stroke-linejoin="round"/>
+
+  <!-- PAPEL -->
+  <path d="M315 286
+           L331 276
+           L341 285
+           L355 281
+           L361 297
+           L350 311
+           L330 307Z"
+        fill="#F5F5F5"
+        stroke="#2F343B"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- ESCOMBRO -->
+  <path d="M147 301 L163 284 L178 304Z"
+        fill="#A8A8A8"
+        stroke="#2F343B"
+        stroke-width="4"/>
+  <path d="M205 314 L221 296 L237 315Z"
+        fill="#8E9399"
+        stroke="#2F343B"
+        stroke-width="4"/>
+  <path d="M365 308 L378 292 L393 310Z"
+        fill="#989DA3"
+        stroke="#2F343B"
+        stroke-width="4"/>
+
+  <!-- PUNTOS DE RESIDUOS -->
+  <circle cx="137" cy="314" r="6" fill="#2F343B"/>
+  <circle cx="186" cy="318" r="5" fill="#2F343B"/>
+  <circle cx="390" cy="300" r="5" fill="#2F343B"/>
+  <circle cx="374" cy="322" r="6" fill="#2F343B"/>
+
+</svg>
