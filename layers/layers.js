@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([-11876839.010149, 3705434.359792, -11830770.400306, 3738080.796993]);
+//ol.proj.get("EPSG:3857").setExtent([-11872274.697839, 3703345.606700, -11826206.087996, 3735992.043902]);
 var wms_layers = [];
 
 
@@ -180,104 +180,119 @@ var lyr_Crecimientourbano2000_9 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Crecimientourbano2000_9.png" /> Crecimiento urbano 2000'
             });
-var format_SierradeJurez_10 = new ol.format.GeoJSON();
-var features_SierradeJurez_10 = format_SierradeJurez_10.readFeatures(json_SierradeJurez_10, 
+var format_Centrodepoblacin_10 = new ol.format.GeoJSON();
+var features_Centrodepoblacin_10 = format_Centrodepoblacin_10.readFeatures(json_Centrodepoblacin_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SierradeJurez_10 = new ol.source.Vector({
+var jsonSource_Centrodepoblacin_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SierradeJurez_10.addFeatures(features_SierradeJurez_10);
-var lyr_SierradeJurez_10 = new ol.layer.Vector({
+jsonSource_Centrodepoblacin_10.addFeatures(features_Centrodepoblacin_10);
+var lyr_Centrodepoblacin_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_SierradeJurez_10, 
-                style: style_SierradeJurez_10,
-                popuplayertitle: 'Sierra de Juárez',
-                interactive: false,
-                title: '<img src="styles/legend/SierradeJurez_10.png" /> Sierra de Juárez'
-            });
-var format_Bancosdematerial_11 = new ol.format.GeoJSON();
-var features_Bancosdematerial_11 = format_Bancosdematerial_11.readFeatures(json_Bancosdematerial_11, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Bancosdematerial_11 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Bancosdematerial_11.addFeatures(features_Bancosdematerial_11);
-var lyr_Bancosdematerial_11 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Bancosdematerial_11, 
-                style: style_Bancosdematerial_11,
-                popuplayertitle: 'Bancos de material ',
-                interactive: true,
-                title: '<img src="styles/legend/Bancosdematerial_11.png" /> Bancos de material '
-            });
-var format_AsentamientosSierradeJurez_12 = new ol.format.GeoJSON();
-var features_AsentamientosSierradeJurez_12 = format_AsentamientosSierradeJurez_12.readFeatures(json_AsentamientosSierradeJurez_12, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_AsentamientosSierradeJurez_12 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_AsentamientosSierradeJurez_12.addFeatures(features_AsentamientosSierradeJurez_12);
-var lyr_AsentamientosSierradeJurez_12 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_AsentamientosSierradeJurez_12, 
-                style: style_AsentamientosSierradeJurez_12,
-                popuplayertitle: 'Asentamientos Sierra de Juárez',
-                interactive: true,
-                title: '<img src="styles/legend/AsentamientosSierradeJurez_12.png" /> Asentamientos Sierra de Juárez'
-            });
-var format_Tiraderos_13 = new ol.format.GeoJSON();
-var features_Tiraderos_13 = format_Tiraderos_13.readFeatures(json_Tiraderos_13, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Tiraderos_13 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Tiraderos_13.addFeatures(features_Tiraderos_13);
-var lyr_Tiraderos_13 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Tiraderos_13, 
-                style: style_Tiraderos_13,
-                popuplayertitle: 'Tiraderos',
-                interactive: true,
-                title: '<img src="styles/legend/Tiraderos_13.png" /> Tiraderos'
-            });
-var format_Centrodepoblacin_14 = new ol.format.GeoJSON();
-var features_Centrodepoblacin_14 = format_Centrodepoblacin_14.readFeatures(json_Centrodepoblacin_14, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Centrodepoblacin_14 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Centrodepoblacin_14.addFeatures(features_Centrodepoblacin_14);
-var lyr_Centrodepoblacin_14 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Centrodepoblacin_14, 
-                style: style_Centrodepoblacin_14,
+                source:jsonSource_Centrodepoblacin_10, 
+                style: style_Centrodepoblacin_10,
                 popuplayertitle: 'Centro de población',
                 interactive: false,
-                title: '<img src="styles/legend/Centrodepoblacin_14.png" /> Centro de población'
+                title: '<img src="styles/legend/Centrodepoblacin_10.png" /> Centro de población'
             });
-var format_ColoniasyFraccionamientos_15 = new ol.format.GeoJSON();
-var features_ColoniasyFraccionamientos_15 = format_ColoniasyFraccionamientos_15.readFeatures(json_ColoniasyFraccionamientos_15, 
+var format_Zonaurbana_11 = new ol.format.GeoJSON();
+var features_Zonaurbana_11 = format_Zonaurbana_11.readFeatures(json_Zonaurbana_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ColoniasyFraccionamientos_15 = new ol.source.Vector({
+var jsonSource_Zonaurbana_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ColoniasyFraccionamientos_15.addFeatures(features_ColoniasyFraccionamientos_15);
-var lyr_ColoniasyFraccionamientos_15 = new ol.layer.Vector({
+jsonSource_Zonaurbana_11.addFeatures(features_Zonaurbana_11);
+var lyr_Zonaurbana_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ColoniasyFraccionamientos_15, 
-                style: style_ColoniasyFraccionamientos_15,
+                source:jsonSource_Zonaurbana_11, 
+                style: style_Zonaurbana_11,
+                popuplayertitle: 'Zona urbana',
+                interactive: true,
+                title: '<img src="styles/legend/Zonaurbana_11.png" /> Zona urbana'
+            });
+var format_ColoniasyFraccionamientos_12 = new ol.format.GeoJSON();
+var features_ColoniasyFraccionamientos_12 = format_ColoniasyFraccionamientos_12.readFeatures(json_ColoniasyFraccionamientos_12, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_ColoniasyFraccionamientos_12 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_ColoniasyFraccionamientos_12.addFeatures(features_ColoniasyFraccionamientos_12);
+var lyr_ColoniasyFraccionamientos_12 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_ColoniasyFraccionamientos_12, 
+                style: style_ColoniasyFraccionamientos_12,
                 popuplayertitle: 'Colonias y Fraccionamientos',
                 interactive: true,
-                title: '<img src="styles/legend/ColoniasyFraccionamientos_15.png" /> Colonias y Fraccionamientos'
+                title: '<img src="styles/legend/ColoniasyFraccionamientos_12.png" /> Colonias y Fraccionamientos'
             });
-var group_Contextoterritorial = new ol.layer.Group({
-                                layers: [lyr_Centrodepoblacin_14,lyr_ColoniasyFraccionamientos_15,],
-                                fold: 'close',
-                                title: 'Contexto territorial'});
+var format_SierradeJurez_13 = new ol.format.GeoJSON();
+var features_SierradeJurez_13 = format_SierradeJurez_13.readFeatures(json_SierradeJurez_13, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_SierradeJurez_13 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_SierradeJurez_13.addFeatures(features_SierradeJurez_13);
+var lyr_SierradeJurez_13 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_SierradeJurez_13, 
+                style: style_SierradeJurez_13,
+                popuplayertitle: 'Sierra de Juárez',
+                interactive: false,
+                title: '<img src="styles/legend/SierradeJurez_13.png" /> Sierra de Juárez'
+            });
+var format_Bancosdematerial_14 = new ol.format.GeoJSON();
+var features_Bancosdematerial_14 = format_Bancosdematerial_14.readFeatures(json_Bancosdematerial_14, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Bancosdematerial_14 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Bancosdematerial_14.addFeatures(features_Bancosdematerial_14);
+var lyr_Bancosdematerial_14 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Bancosdematerial_14, 
+                style: style_Bancosdematerial_14,
+                popuplayertitle: 'Bancos de material ',
+                interactive: true,
+                title: '<img src="styles/legend/Bancosdematerial_14.png" /> Bancos de material '
+            });
+var format_AsentamientosSierradeJurez_15 = new ol.format.GeoJSON();
+var features_AsentamientosSierradeJurez_15 = format_AsentamientosSierradeJurez_15.readFeatures(json_AsentamientosSierradeJurez_15, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_AsentamientosSierradeJurez_15 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_AsentamientosSierradeJurez_15.addFeatures(features_AsentamientosSierradeJurez_15);
+var lyr_AsentamientosSierradeJurez_15 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_AsentamientosSierradeJurez_15, 
+                style: style_AsentamientosSierradeJurez_15,
+                popuplayertitle: 'Asentamientos Sierra de Juárez',
+                interactive: true,
+                title: '<img src="styles/legend/AsentamientosSierradeJurez_15.png" /> Asentamientos Sierra de Juárez'
+            });
+var format_Tiraderos_16 = new ol.format.GeoJSON();
+var features_Tiraderos_16 = format_Tiraderos_16.readFeatures(json_Tiraderos_16, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Tiraderos_16 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Tiraderos_16.addFeatures(features_Tiraderos_16);
+var lyr_Tiraderos_16 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Tiraderos_16, 
+                style: style_Tiraderos_16,
+                popuplayertitle: 'Tiraderos',
+                interactive: true,
+                title: '<img src="styles/legend/Tiraderos_16.png" /> Tiraderos'
+            });
 var group_Ocupacinyactividadesdelterritorio = new ol.layer.Group({
-                                layers: [lyr_SierradeJurez_10,lyr_Bancosdematerial_11,lyr_AsentamientosSierradeJurez_12,lyr_Tiraderos_13,],
+                                layers: [lyr_SierradeJurez_13,lyr_Bancosdematerial_14,lyr_AsentamientosSierradeJurez_15,lyr_Tiraderos_16,],
                                 fold: 'open',
                                 title: 'Ocupación y actividades del territorio'});
+var group_Contextoterritorial = new ol.layer.Group({
+                                layers: [lyr_Centrodepoblacin_10,lyr_Zonaurbana_11,lyr_ColoniasyFraccionamientos_12,],
+                                fold: 'close',
+                                title: 'Contexto territorial'});
 var group_Crecimientourbano = new ol.layer.Group({
                                 layers: [lyr_Crecimientourbano2026_8,lyr_Crecimientourbano2000_9,],
                                 fold: 'close',
@@ -291,8 +306,8 @@ var group_VegetacinNDVI = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'Vegetación (NDVI)'});
 
-lyr_ESRIGraydark_0.setVisible(false);lyr_GoogleSatellite_1.setVisible(true);lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2025_3.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2000_4.setVisible(false);lyr_Cambiodetemperaturasuperficial20002025_5.setVisible(false);lyr_Temperaturasuperficial2025_6.setVisible(false);lyr_Temperaturasuperficial2000_7.setVisible(false);lyr_Crecimientourbano2026_8.setVisible(false);lyr_Crecimientourbano2000_9.setVisible(false);lyr_SierradeJurez_10.setVisible(true);lyr_Bancosdematerial_11.setVisible(true);lyr_AsentamientosSierradeJurez_12.setVisible(true);lyr_Tiraderos_13.setVisible(true);lyr_Centrodepoblacin_14.setVisible(false);lyr_ColoniasyFraccionamientos_15.setVisible(false);
-var layersList = [lyr_ESRIGraydark_0,lyr_GoogleSatellite_1,group_VegetacinNDVI,group_Temperaturasuperficial,group_Crecimientourbano,group_Ocupacinyactividadesdelterritorio,group_Contextoterritorial];
+lyr_ESRIGraydark_0.setVisible(false);lyr_GoogleSatellite_1.setVisible(true);lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2025_3.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2000_4.setVisible(false);lyr_Cambiodetemperaturasuperficial20002025_5.setVisible(false);lyr_Temperaturasuperficial2025_6.setVisible(false);lyr_Temperaturasuperficial2000_7.setVisible(false);lyr_Crecimientourbano2026_8.setVisible(false);lyr_Crecimientourbano2000_9.setVisible(false);lyr_Centrodepoblacin_10.setVisible(false);lyr_Zonaurbana_11.setVisible(true);lyr_ColoniasyFraccionamientos_12.setVisible(false);lyr_SierradeJurez_13.setVisible(true);lyr_Bancosdematerial_14.setVisible(true);lyr_AsentamientosSierradeJurez_15.setVisible(true);lyr_Tiraderos_16.setVisible(true);
+var layersList = [lyr_ESRIGraydark_0,lyr_GoogleSatellite_1,group_VegetacinNDVI,group_Temperaturasuperficial,group_Crecimientourbano,group_Contextoterritorial,group_Ocupacinyactividadesdelterritorio];
 lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldAliases', {'fid': 'fid', 'clases': 'clases', 'rango': 'Rango', });
 lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldAliases', {'fid': 'fid', 'clase': 'clase', 'rango': 'Rango', });
 lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldAliases', {'fid': 'fid', 'clase': 'clase', 'rango': 'Rango ', });
@@ -301,12 +316,13 @@ lyr_Temperaturasuperficial2025_6.set('fieldAliases', {'fid': 'fid', 'tem': 'tem'
 lyr_Temperaturasuperficial2000_7.set('fieldAliases', {'fid': 'fid', 'temp': 'temp', 'rango': 'Rango de temperatura', });
 lyr_Crecimientourbano2026_8.set('fieldAliases', {'fid': 'fid', 'anio': 'Año', 'tipo': 'tipo', 'clase': 'clase', 'area_ha': 'area_ha', });
 lyr_Crecimientourbano2000_9.set('fieldAliases', {'fid': 'fid', 'anio': 'Año', 'tipo': 'tipo', 'clase': 'clase', 'area_ha': 'area_ha', });
-lyr_SierradeJurez_10.set('fieldAliases', {'fid': 'fid', 'NOM_OBJ': 'NOM_OBJ', 'CODIGO': 'CODIGO', 'CALIF_POS': 'CALIF_POS', 'CLASE_GEO': 'CLASE_GEO', 'TIPO': 'TIPO', 'sierra': 'sierra', 'Id': 'Id', 'PERIMETER': 'PERIMETER', 'AREA': 'AREA', 'siErr': 'siErr', });
-lyr_Bancosdematerial_11.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'Empresa': 'Empresa', 'Proyecto': 'Proyecto', 'Mineral': 'Mineral', 'TIPO': 'TIPO', 'Ha': 'Ha', 'Clasificac': 'Clasificac', 'CieloAbier': 'CieloAbier', 'ID_': 'ID_', 'Cobre': 'Cobre', 'Shape__Are': 'Shape__Are', 'Shape__Len': 'Shape__Len', 'area_ha': 'Superficie (Hectárea)', });
-lyr_AsentamientosSierradeJurez_12.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'Name': 'Nombre', 'description': 'description', });
-lyr_Tiraderos_13.set('fieldAliases', {'fid': 'fid', 'Name': 'Nombre', });
-lyr_Centrodepoblacin_14.set('fieldAliases', {'fid': 'fid', 'USO': 'USO', 'Nombre_USO': 'Nombre_USO', 'Clave_USO': 'Clave_USO', 'ID': 'ID', 'PLAN_Parci': 'PLAN_Parci', 'GlobalID': 'GlobalID', });
-lyr_ColoniasyFraccionamientos_15.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'ID_COLO': 'ID_COLO', 'NOMBRE': 'NOMBRE', 'GlobalID': 'GlobalID', 'TIPO': 'TIPO', 'ETIQUETA': 'ETIQUETA', 'Shape_STAr': 'Shape_STAr', 'Shape_STLe': 'Shape_STLe', 'nombre2': 'Nombre', });
+lyr_Centrodepoblacin_10.set('fieldAliases', {'fid': 'fid', 'USO': 'USO', 'Nombre_USO': 'Nombre_USO', 'Clave_USO': 'Clave_USO', 'ID': 'ID', 'PLAN_Parci': 'PLAN_Parci', 'GlobalID': 'GlobalID', });
+lyr_Zonaurbana_11.set('fieldAliases', {'fid': 'fid', 'NOMGEO': 'Nombre localidad', 'POBTOT': 'Población total', });
+lyr_ColoniasyFraccionamientos_12.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'ID_COLO': 'ID_COLO', 'NOMBRE': 'NOMBRE', 'GlobalID': 'GlobalID', 'TIPO': 'TIPO', 'ETIQUETA': 'ETIQUETA', 'Shape_STAr': 'Shape_STAr', 'Shape_STLe': 'Shape_STLe', 'nombre2': 'Nombre', });
+lyr_SierradeJurez_13.set('fieldAliases', {'fid': 'fid', 'NOM_OBJ': 'NOM_OBJ', 'CODIGO': 'CODIGO', 'CALIF_POS': 'CALIF_POS', 'CLASE_GEO': 'CLASE_GEO', 'TIPO': 'TIPO', 'sierra': 'sierra', 'Id': 'Id', 'PERIMETER': 'PERIMETER', 'AREA': 'AREA', 'siErr': 'siErr', });
+lyr_Bancosdematerial_14.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'Empresa': 'Empresa', 'Proyecto': 'Proyecto', 'Mineral': 'Mineral', 'TIPO': 'TIPO', 'Ha': 'Ha', 'Clasificac': 'Clasificac', 'CieloAbier': 'CieloAbier', 'ID_': 'ID_', 'Cobre': 'Cobre', 'Shape__Are': 'Shape__Are', 'Shape__Len': 'Shape__Len', 'area_ha': 'Superficie (Hectárea)', });
+lyr_AsentamientosSierradeJurez_15.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'Name': 'Nombre', 'description': 'description', });
+lyr_Tiraderos_16.set('fieldAliases', {'fid': 'fid', 'Name': 'Nombre', });
 lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldImages', {'fid': 'Hidden', 'clases': 'Hidden', 'rango': 'TextEdit', });
 lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldImages', {'fid': 'Hidden', 'clase': 'Hidden', 'rango': 'TextEdit', });
 lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldImages', {'fid': 'Hidden', 'clase': 'Hidden', 'rango': 'TextEdit', });
@@ -315,12 +331,13 @@ lyr_Temperaturasuperficial2025_6.set('fieldImages', {'fid': 'Hidden', 'tem': 'Hi
 lyr_Temperaturasuperficial2000_7.set('fieldImages', {'fid': 'Hidden', 'temp': 'Hidden', 'rango': 'TextEdit', });
 lyr_Crecimientourbano2026_8.set('fieldImages', {'fid': 'TextEdit', 'anio': 'TextEdit', 'tipo': 'Hidden', 'clase': 'Hidden', 'area_ha': 'TextEdit', });
 lyr_Crecimientourbano2000_9.set('fieldImages', {'fid': 'TextEdit', 'anio': 'TextEdit', 'tipo': 'Hidden', 'clase': 'Hidden', 'area_ha': 'TextEdit', });
-lyr_SierradeJurez_10.set('fieldImages', {'fid': '', 'NOM_OBJ': '', 'CODIGO': '', 'CALIF_POS': '', 'CLASE_GEO': '', 'TIPO': '', 'sierra': '', 'Id': '', 'PERIMETER': '', 'AREA': '', 'siErr': '', });
-lyr_Bancosdematerial_11.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'Empresa': 'Hidden', 'Proyecto': 'Hidden', 'Mineral': 'Hidden', 'TIPO': 'Hidden', 'Ha': 'Hidden', 'Clasificac': 'Hidden', 'CieloAbier': 'Hidden', 'ID_': 'Hidden', 'Cobre': 'Hidden', 'Shape__Are': 'Hidden', 'Shape__Len': 'Hidden', 'area_ha': 'TextEdit', });
-lyr_AsentamientosSierradeJurez_12.set('fieldImages', {'fid': 'Hidden', 'id': 'Hidden', 'Name': 'TextEdit', 'description': 'Hidden', });
-lyr_Tiraderos_13.set('fieldImages', {'fid': 'Hidden', 'Name': 'TextEdit', });
-lyr_Centrodepoblacin_14.set('fieldImages', {'fid': 'TextEdit', 'USO': 'TextEdit', 'Nombre_USO': 'TextEdit', 'Clave_USO': 'TextEdit', 'ID': 'TextEdit', 'PLAN_Parci': 'TextEdit', 'GlobalID': 'TextEdit', });
-lyr_ColoniasyFraccionamientos_15.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'ID_COLO': 'Hidden', 'NOMBRE': 'Hidden', 'GlobalID': 'Hidden', 'TIPO': 'Hidden', 'ETIQUETA': 'Hidden', 'Shape_STAr': 'Hidden', 'Shape_STLe': 'Hidden', 'nombre2': 'TextEdit', });
+lyr_Centrodepoblacin_10.set('fieldImages', {'fid': 'TextEdit', 'USO': 'TextEdit', 'Nombre_USO': 'TextEdit', 'Clave_USO': 'TextEdit', 'ID': 'TextEdit', 'PLAN_Parci': 'TextEdit', 'GlobalID': 'TextEdit', });
+lyr_Zonaurbana_11.set('fieldImages', {'fid': 'TextEdit', 'NOMGEO': 'TextEdit', 'POBTOT': 'Range', });
+lyr_ColoniasyFraccionamientos_12.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'ID_COLO': 'Hidden', 'NOMBRE': 'Hidden', 'GlobalID': 'Hidden', 'TIPO': 'Hidden', 'ETIQUETA': 'Hidden', 'Shape_STAr': 'Hidden', 'Shape_STLe': 'Hidden', 'nombre2': 'TextEdit', });
+lyr_SierradeJurez_13.set('fieldImages', {'fid': '', 'NOM_OBJ': '', 'CODIGO': '', 'CALIF_POS': '', 'CLASE_GEO': '', 'TIPO': '', 'sierra': '', 'Id': '', 'PERIMETER': '', 'AREA': '', 'siErr': '', });
+lyr_Bancosdematerial_14.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'Empresa': 'Hidden', 'Proyecto': 'Hidden', 'Mineral': 'Hidden', 'TIPO': 'Hidden', 'Ha': 'Hidden', 'Clasificac': 'Hidden', 'CieloAbier': 'Hidden', 'ID_': 'Hidden', 'Cobre': 'Hidden', 'Shape__Are': 'Hidden', 'Shape__Len': 'Hidden', 'area_ha': 'TextEdit', });
+lyr_AsentamientosSierradeJurez_15.set('fieldImages', {'fid': 'Hidden', 'id': 'Hidden', 'Name': 'TextEdit', 'description': 'Hidden', });
+lyr_Tiraderos_16.set('fieldImages', {'fid': 'Hidden', 'Name': 'TextEdit', });
 lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldLabels', {'rango': 'no label', });
 lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldLabels', {'rango': 'no label', });
 lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldLabels', {'rango': 'no label', });
@@ -329,12 +346,13 @@ lyr_Temperaturasuperficial2025_6.set('fieldLabels', {'rango': 'no label', });
 lyr_Temperaturasuperficial2000_7.set('fieldLabels', {'rango': 'no label', });
 lyr_Crecimientourbano2026_8.set('fieldLabels', {'fid': 'no label', 'anio': 'inline label - visible with data', 'area_ha': 'no label', });
 lyr_Crecimientourbano2000_9.set('fieldLabels', {'fid': 'no label', 'anio': 'inline label - visible with data', 'area_ha': 'no label', });
-lyr_SierradeJurez_10.set('fieldLabels', {'fid': 'no label', 'NOM_OBJ': 'no label', 'CODIGO': 'no label', 'CALIF_POS': 'no label', 'CLASE_GEO': 'no label', 'TIPO': 'no label', 'sierra': 'no label', 'Id': 'no label', 'PERIMETER': 'no label', 'AREA': 'no label', 'siErr': 'no label', });
-lyr_Bancosdematerial_11.set('fieldLabels', {'area_ha': 'inline label - visible with data', });
-lyr_AsentamientosSierradeJurez_12.set('fieldLabels', {'Name': 'inline label - visible with data', });
-lyr_Tiraderos_13.set('fieldLabels', {'Name': 'inline label - visible with data', });
-lyr_Centrodepoblacin_14.set('fieldLabels', {'fid': 'no label', 'USO': 'no label', 'Nombre_USO': 'no label', 'Clave_USO': 'no label', 'ID': 'no label', 'PLAN_Parci': 'no label', 'GlobalID': 'no label', });
-lyr_ColoniasyFraccionamientos_15.set('fieldLabels', {'nombre2': 'no label', });
-lyr_ColoniasyFraccionamientos_15.on('precompose', function(evt) {
+lyr_Centrodepoblacin_10.set('fieldLabels', {'fid': 'no label', 'USO': 'no label', 'Nombre_USO': 'no label', 'Clave_USO': 'no label', 'ID': 'no label', 'PLAN_Parci': 'no label', 'GlobalID': 'no label', });
+lyr_Zonaurbana_11.set('fieldLabels', {'fid': 'no label', 'NOMGEO': 'inline label - visible with data', 'POBTOT': 'inline label - visible with data', });
+lyr_ColoniasyFraccionamientos_12.set('fieldLabels', {'nombre2': 'no label', });
+lyr_SierradeJurez_13.set('fieldLabels', {'fid': 'no label', 'NOM_OBJ': 'no label', 'CODIGO': 'no label', 'CALIF_POS': 'no label', 'CLASE_GEO': 'no label', 'TIPO': 'no label', 'sierra': 'no label', 'Id': 'no label', 'PERIMETER': 'no label', 'AREA': 'no label', 'siErr': 'no label', });
+lyr_Bancosdematerial_14.set('fieldLabels', {'area_ha': 'inline label - visible with data', });
+lyr_AsentamientosSierradeJurez_15.set('fieldLabels', {'Name': 'inline label - visible with data', });
+lyr_Tiraderos_16.set('fieldLabels', {'Name': 'inline label - visible with data', });
+lyr_Tiraderos_16.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
