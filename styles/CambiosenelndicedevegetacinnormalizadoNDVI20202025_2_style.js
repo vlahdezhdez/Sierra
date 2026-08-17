@@ -76,7 +76,7 @@ var style_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2 = function(featur
     };
     
     var labelText = ""; 
-    var value = feature.get("q2wHide_clases");
+    var value = feature.get("q2wHide_fid");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";

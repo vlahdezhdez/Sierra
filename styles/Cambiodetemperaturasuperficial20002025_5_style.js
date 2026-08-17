@@ -76,7 +76,7 @@ var style_Cambiodetemperaturasuperficial20002025_5 = function(feature, resolutio
     };
     
     var labelText = ""; 
-    var value = feature.get("clase");
+    var value = feature.get("q2wHide_fid");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";

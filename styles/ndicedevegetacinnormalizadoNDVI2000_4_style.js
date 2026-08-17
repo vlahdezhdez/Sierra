@@ -76,7 +76,7 @@ var style_ndicedevegetacinnormalizadoNDVI2000_4 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("q2wHide_clase");
+    var value = feature.get("q2wHide_fid");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";

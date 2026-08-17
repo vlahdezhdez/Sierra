@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:3857").setExtent([-11872274.697839, 3703345.606700, -11826206.087996, 3735992.043902]);
+//ol.proj.get("EPSG:3857").setExtent([-11874634.215220, 3702223.868929, -11828565.605377, 3734870.306131]);
 var wms_layers = [];
 
 
@@ -237,7 +237,7 @@ var lyr_SierradeJurez_13 = new ol.layer.Vector({
                 source:jsonSource_SierradeJurez_13, 
                 style: style_SierradeJurez_13,
                 popuplayertitle: 'Sierra de Juárez',
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/SierradeJurez_13.png" /> Sierra de Juárez'
             });
 var format_Bancosdematerial_14 = new ol.format.GeoJSON();
@@ -308,10 +308,10 @@ var group_VegetacinNDVI = new ol.layer.Group({
 
 lyr_ESRIGraydark_0.setVisible(false);lyr_GoogleSatellite_1.setVisible(true);lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2025_3.setVisible(false);lyr_ndicedevegetacinnormalizadoNDVI2000_4.setVisible(false);lyr_Cambiodetemperaturasuperficial20002025_5.setVisible(false);lyr_Temperaturasuperficial2025_6.setVisible(false);lyr_Temperaturasuperficial2000_7.setVisible(false);lyr_Crecimientourbano2026_8.setVisible(false);lyr_Crecimientourbano2000_9.setVisible(false);lyr_Centrodepoblacin_10.setVisible(false);lyr_Zonaurbana_11.setVisible(true);lyr_ColoniasyFraccionamientos_12.setVisible(false);lyr_SierradeJurez_13.setVisible(true);lyr_Bancosdematerial_14.setVisible(true);lyr_AsentamientosSierradeJurez_15.setVisible(true);lyr_Tiraderos_16.setVisible(true);
 var layersList = [lyr_ESRIGraydark_0,lyr_GoogleSatellite_1,group_VegetacinNDVI,group_Temperaturasuperficial,group_Crecimientourbano,group_Contextoterritorial,group_Ocupacinyactividadesdelterritorio];
-lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldAliases', {'fid': 'fid', 'clases': 'clases', 'rango': 'Rango', });
-lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldAliases', {'fid': 'fid', 'clase': 'clase', 'rango': 'Rango', });
-lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldAliases', {'fid': 'fid', 'clase': 'clase', 'rango': 'Rango ', });
-lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldAliases', {'fid': 'fid', 'clase': 'clase', 'rango': 'rango', 'cambio': 'Cambio', });
+lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldAliases', {'fid': 'fid', 'rango': 'Rango', });
+lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldAliases', {'fid': 'fid', 'rango': 'Rango', });
+lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldAliases', {'fid': 'fid', 'rango': 'Rango ', });
+lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldAliases', {'fid': 'fid', 'rango': 'rango', 'cambio': 'Cambio', });
 lyr_Temperaturasuperficial2025_6.set('fieldAliases', {'fid': 'fid', 'tem': 'tem', 'rango': 'Rango de temperatura', });
 lyr_Temperaturasuperficial2000_7.set('fieldAliases', {'fid': 'fid', 'temp': 'temp', 'rango': 'Rango de temperatura', });
 lyr_Crecimientourbano2026_8.set('fieldAliases', {'fid': 'fid', 'anio': 'Año', 'tipo': 'tipo', 'clase': 'clase', 'area_ha': 'area_ha', });
@@ -319,39 +319,39 @@ lyr_Crecimientourbano2000_9.set('fieldAliases', {'fid': 'fid', 'anio': 'Año', '
 lyr_Centrodepoblacin_10.set('fieldAliases', {'fid': 'fid', 'USO': 'USO', 'Nombre_USO': 'Nombre_USO', 'Clave_USO': 'Clave_USO', 'ID': 'ID', 'PLAN_Parci': 'PLAN_Parci', 'GlobalID': 'GlobalID', });
 lyr_Zonaurbana_11.set('fieldAliases', {'fid': 'fid', 'NOMGEO': 'Nombre localidad', 'POBTOT': 'Población total', });
 lyr_ColoniasyFraccionamientos_12.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'ID_COLO': 'ID_COLO', 'NOMBRE': 'NOMBRE', 'GlobalID': 'GlobalID', 'TIPO': 'TIPO', 'ETIQUETA': 'ETIQUETA', 'Shape_STAr': 'Shape_STAr', 'Shape_STLe': 'Shape_STLe', 'nombre2': 'Nombre', });
-lyr_SierradeJurez_13.set('fieldAliases', {'fid': 'fid', 'NOM_OBJ': 'NOM_OBJ', 'CODIGO': 'CODIGO', 'CALIF_POS': 'CALIF_POS', 'CLASE_GEO': 'CLASE_GEO', 'TIPO': 'TIPO', 'sierra': 'sierra', 'Id': 'Id', 'PERIMETER': 'PERIMETER', 'AREA': 'AREA', 'siErr': 'siErr', });
+lyr_SierradeJurez_13.set('fieldAliases', {'fid': 'fid', 'sierra': 'Nombre', 'PERIMETER': 'Perímetro (km)', 'AREA': 'Superficie (ha)', });
 lyr_Bancosdematerial_14.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'Empresa': 'Empresa', 'Proyecto': 'Proyecto', 'Mineral': 'Mineral', 'TIPO': 'TIPO', 'Ha': 'Ha', 'Clasificac': 'Clasificac', 'CieloAbier': 'CieloAbier', 'ID_': 'ID_', 'Cobre': 'Cobre', 'Shape__Are': 'Shape__Are', 'Shape__Len': 'Shape__Len', 'area_ha': 'Superficie (Hectárea)', });
 lyr_AsentamientosSierradeJurez_15.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'Name': 'Nombre', 'description': 'description', });
 lyr_Tiraderos_16.set('fieldAliases', {'fid': 'fid', 'Name': 'Nombre', });
-lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldImages', {'fid': 'Hidden', 'clases': 'Hidden', 'rango': 'TextEdit', });
-lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldImages', {'fid': 'Hidden', 'clase': 'Hidden', 'rango': 'TextEdit', });
-lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldImages', {'fid': 'Hidden', 'clase': 'Hidden', 'rango': 'TextEdit', });
-lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldImages', {'fid': 'TextEdit', 'clase': 'Range', 'rango': 'TextEdit', 'cambio': 'TextEdit', });
+lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldImages', {'fid': 'Hidden', 'rango': 'TextEdit', });
+lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldImages', {'fid': 'Hidden', 'rango': 'TextEdit', });
+lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldImages', {'fid': 'Hidden', 'rango': 'TextEdit', });
+lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldImages', {'fid': 'Hidden', 'rango': 'Hidden', 'cambio': 'TextEdit', });
 lyr_Temperaturasuperficial2025_6.set('fieldImages', {'fid': 'Hidden', 'tem': 'Hidden', 'rango': 'TextEdit', });
 lyr_Temperaturasuperficial2000_7.set('fieldImages', {'fid': 'Hidden', 'temp': 'Hidden', 'rango': 'TextEdit', });
 lyr_Crecimientourbano2026_8.set('fieldImages', {'fid': 'TextEdit', 'anio': 'TextEdit', 'tipo': 'Hidden', 'clase': 'Hidden', 'area_ha': 'TextEdit', });
 lyr_Crecimientourbano2000_9.set('fieldImages', {'fid': 'TextEdit', 'anio': 'TextEdit', 'tipo': 'Hidden', 'clase': 'Hidden', 'area_ha': 'TextEdit', });
 lyr_Centrodepoblacin_10.set('fieldImages', {'fid': 'TextEdit', 'USO': 'TextEdit', 'Nombre_USO': 'TextEdit', 'Clave_USO': 'TextEdit', 'ID': 'TextEdit', 'PLAN_Parci': 'TextEdit', 'GlobalID': 'TextEdit', });
-lyr_Zonaurbana_11.set('fieldImages', {'fid': 'TextEdit', 'NOMGEO': 'TextEdit', 'POBTOT': 'Range', });
+lyr_Zonaurbana_11.set('fieldImages', {'fid': 'Hidden', 'NOMGEO': 'TextEdit', 'POBTOT': 'Range', });
 lyr_ColoniasyFraccionamientos_12.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'ID_COLO': 'Hidden', 'NOMBRE': 'Hidden', 'GlobalID': 'Hidden', 'TIPO': 'Hidden', 'ETIQUETA': 'Hidden', 'Shape_STAr': 'Hidden', 'Shape_STLe': 'Hidden', 'nombre2': 'TextEdit', });
-lyr_SierradeJurez_13.set('fieldImages', {'fid': '', 'NOM_OBJ': '', 'CODIGO': '', 'CALIF_POS': '', 'CLASE_GEO': '', 'TIPO': '', 'sierra': '', 'Id': '', 'PERIMETER': '', 'AREA': '', 'siErr': '', });
+lyr_SierradeJurez_13.set('fieldImages', {'fid': 'Hidden', 'sierra': 'Hidden', 'PERIMETER': 'TextEdit', 'AREA': 'TextEdit', });
 lyr_Bancosdematerial_14.set('fieldImages', {'fid': 'Hidden', 'OBJECTID': 'Hidden', 'Empresa': 'Hidden', 'Proyecto': 'Hidden', 'Mineral': 'Hidden', 'TIPO': 'Hidden', 'Ha': 'Hidden', 'Clasificac': 'Hidden', 'CieloAbier': 'Hidden', 'ID_': 'Hidden', 'Cobre': 'Hidden', 'Shape__Are': 'Hidden', 'Shape__Len': 'Hidden', 'area_ha': 'TextEdit', });
-lyr_AsentamientosSierradeJurez_15.set('fieldImages', {'fid': 'Hidden', 'id': 'Hidden', 'Name': 'TextEdit', 'description': 'Hidden', });
+lyr_AsentamientosSierradeJurez_15.set('fieldImages', {'fid': 'Hidden', 'id': 'Hidden', 'Name': 'Hidden', 'description': 'Hidden', });
 lyr_Tiraderos_16.set('fieldImages', {'fid': 'Hidden', 'Name': 'TextEdit', });
-lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldLabels', {'rango': 'no label', });
-lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldLabels', {'rango': 'no label', });
-lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldLabels', {'rango': 'no label', });
-lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldLabels', {'fid': 'no label', 'clase': 'no label', 'rango': 'no label', 'cambio': 'no label', });
-lyr_Temperaturasuperficial2025_6.set('fieldLabels', {'rango': 'no label', });
-lyr_Temperaturasuperficial2000_7.set('fieldLabels', {'rango': 'no label', });
-lyr_Crecimientourbano2026_8.set('fieldLabels', {'fid': 'no label', 'anio': 'inline label - visible with data', 'area_ha': 'no label', });
-lyr_Crecimientourbano2000_9.set('fieldLabels', {'fid': 'no label', 'anio': 'inline label - visible with data', 'area_ha': 'no label', });
+lyr_CambiosenelndicedevegetacinnormalizadoNDVI20202025_2.set('fieldLabels', {'rango': 'inline label - always visible', });
+lyr_ndicedevegetacinnormalizadoNDVI2025_3.set('fieldLabels', {'rango': 'inline label - visible with data', });
+lyr_ndicedevegetacinnormalizadoNDVI2000_4.set('fieldLabels', {'rango': 'inline label - visible with data', });
+lyr_Cambiodetemperaturasuperficial20002025_5.set('fieldLabels', {'cambio': 'inline label - visible with data', });
+lyr_Temperaturasuperficial2025_6.set('fieldLabels', {'rango': 'inline label - visible with data', });
+lyr_Temperaturasuperficial2000_7.set('fieldLabels', {'rango': 'inline label - visible with data', });
+lyr_Crecimientourbano2026_8.set('fieldLabels', {'fid': 'hidden field', 'anio': 'inline label - visible with data', 'area_ha': 'hidden field', });
+lyr_Crecimientourbano2000_9.set('fieldLabels', {'fid': 'hidden field', 'anio': 'inline label - visible with data', 'area_ha': 'hidden field', });
 lyr_Centrodepoblacin_10.set('fieldLabels', {'fid': 'no label', 'USO': 'no label', 'Nombre_USO': 'no label', 'Clave_USO': 'no label', 'ID': 'no label', 'PLAN_Parci': 'no label', 'GlobalID': 'no label', });
-lyr_Zonaurbana_11.set('fieldLabels', {'fid': 'no label', 'NOMGEO': 'inline label - visible with data', 'POBTOT': 'inline label - visible with data', });
-lyr_ColoniasyFraccionamientos_12.set('fieldLabels', {'nombre2': 'no label', });
-lyr_SierradeJurez_13.set('fieldLabels', {'fid': 'no label', 'NOM_OBJ': 'no label', 'CODIGO': 'no label', 'CALIF_POS': 'no label', 'CLASE_GEO': 'no label', 'TIPO': 'no label', 'sierra': 'no label', 'Id': 'no label', 'PERIMETER': 'no label', 'AREA': 'no label', 'siErr': 'no label', });
+lyr_Zonaurbana_11.set('fieldLabels', {'NOMGEO': 'inline label - visible with data', 'POBTOT': 'inline label - visible with data', });
+lyr_ColoniasyFraccionamientos_12.set('fieldLabels', {'nombre2': 'inline label - visible with data', });
+lyr_SierradeJurez_13.set('fieldLabels', {'PERIMETER': 'inline label - visible with data', 'AREA': 'inline label - visible with data', });
 lyr_Bancosdematerial_14.set('fieldLabels', {'area_ha': 'inline label - visible with data', });
-lyr_AsentamientosSierradeJurez_15.set('fieldLabels', {'Name': 'inline label - visible with data', });
+lyr_AsentamientosSierradeJurez_15.set('fieldLabels', {});
 lyr_Tiraderos_16.set('fieldLabels', {'Name': 'inline label - visible with data', });
 lyr_Tiraderos_16.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
